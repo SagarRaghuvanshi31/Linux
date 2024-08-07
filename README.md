@@ -1,22 +1,29 @@
 # Linux
 
 <img src="Linux.jpg"/>
-Linux was developed by Linus Torvalds in 1991. <br>
-Linux is an open source. <br>
-Linux is free to use. <br>
-Linux supports CLI and GUI. <br>
-Linux is Multiuser, Multiprocessing and Multitasking. <br>
+
+- Linux was developed by Linus Torvalds in 1991. <br>
+- Linux is an open source. <br>
+- Linux is free to use. <br>
+- Linux supports CLI and GUI. <br>
+- Linux is Multiuser, Multiprocessing and Multitasking. <br>
+
 - **How to login Root user?** <br>
 Alt+f2 = Search bar. <br>
 Terminal name = gnome-terminal <br>
+
 - **How to increase font size?** <br>
 ctrl+shift++ add on + for increasing <br>
+
 - **How to decrease font size?** <br>
 ctrl + (-) <br>
+
 - **For Multiple Tab** <br>
 ctrl+shift+T
+
 - **For Closing Tab** <br>
 Alt+f4
+
 ### Basic Commands
 - **Make a file** <br>
 ```
@@ -286,7 +293,12 @@ azure = name <br>
 
 ### SSH
 
-**Ssh** = Secure Shell
+**Ssh** = Secure Shell <br>
+it is a protocol which is use to take the console of linux remotly. it's port no. is 22. <br>
+**service** = sshd (secure shell domain) <br>
+**Configuration file** = /etc/ssh/sshd_config <br>
+**log file** = /var/log/secure <br>
+
 
 
 
