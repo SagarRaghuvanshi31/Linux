@@ -1,4 +1,6 @@
 # Linux
+
+<img src="Linux.jpg"/>
 Linux was developed by Linus Torvalds in 1991. <br>
 Linux is an open source. <br>
 Linux is free to use. <br>
