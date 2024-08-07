@@ -296,8 +296,40 @@ azure = name <br>
 **Ssh** = Secure Shell <br>
 it is a protocol which is use to take the console of linux remotly. it's port no. is 22. <br>
 **service** = sshd (secure shell domain) <br>
-**Configuration file** = /etc/ssh/sshd_config <br>
-**log file** = /var/log/secure <br>
+
+**Configuration file** 
+```
+/etc/ssh/sshd_config <br>
+```
+**log file**  
+```
+/var/log/secure <br>
+```
+
+### Apache
+It is use to execute/run website <br>
+It is also called webserver <br>
+
+**2 Protocol** <br>
+
+**http** = hyper text transfer protocol <br>
+**port no** = 80 <br>
+
+**https** = hyper text transfer protocol secure <br>
+**port no** = 443 <br>
+
+**service** 
+```
+httpd demon
+```
+**package name** 
+```
+httpd
+```
+**configuration file** 
+```
+/etc/httpd/conf/httpd.conf
+```
 
 
 
