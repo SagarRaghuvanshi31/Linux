@@ -248,7 +248,43 @@ groupdel HR
 vim /etc/group <br>
 ```
 
+### Permission
 
+**See the Permission** <br>
+drwxr-xr-x . 2 root root 6jan 10:40:00 azure <br>
+rwxr-xr-x = permission <br>
+. = ACL <br>
+2 = Subfolder <br>
+root = owner <br>
+6 = size in byte <br>
+jan 1:40:00 = date and time <br>
+azure = name <br>
+
+**Types of Permission**
+
+- **Read** = read the data = r <br>
+- **Write** = edit the data = w <br>
+- **Execute** = come to inside the folder, file = x <br>
+- **No Permission** = -
+
+**User** <br>
+
+- **Privilege** = rwx <br>
+- **Non-Privilege** = r-w <br>
+- **System User** = r-x <br>
+
+**Change the Permission** <br>
+
+ **chmod** = for changing permission
+ (777 = Full permission)
+```
+ adduser aa
+ chmod 777 aa
+```
+
+### SSH
+
+**Ssh** = Secure Shell
 
 
 
