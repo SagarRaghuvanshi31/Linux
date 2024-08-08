@@ -206,16 +206,27 @@ init 0 or shutdown -p or poweroff
 init 6 or reboot or shutdown -r
 ```
 ### File System Hierachy
+
 **/ root** = home directory of root user <br>
+
 **/ boot** = booting file <br>
+
 **/ home** = privilege and non-privilege <br>
+
 **/ var(variables)** = contains server log, database file <br>
+
 **/ dev(device)** = contain hardware file <br>
+
 **/ bin(binaries)** = contain command file which can run by root and non-privilege <br>
+
 **/ sbin(super binaries)** = contain command file which can run by only root (init0, init6) <br>
+
 **/ etc** = contain server configuration file and system configuration file (user, group file, password) <br>
+
 **/ lib** = save OS configuration files <br>
+
 **/ mnt** = use to mounting <br>
+
 ### User and Group Management <br>
 
 **User** = who use the system <br>
