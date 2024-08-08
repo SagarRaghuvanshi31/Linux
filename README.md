@@ -3,32 +3,34 @@
 <img src="Linux.jpg"/>
 
 ## Table of Content
-- **What is Linux**
-- **How to login Root user**
-- **How to increase font size of Terminal**
-- **How to decrease font size of Terminal**
-- **For Multiple Tab**
-- **For Closing Tab**
-- **Basic Commands**
-- **File System Hierachy**
-- **User and Group Management**
-- **Permission**
-- **SSH**
-- **Apache**
+
+1. Introduction to Linux
+2. For Login Root user
+3. To increase font size of Terminal
+4. To decrease font size of Terminal
+5. For Multiple Tab
+6. For Closing Tab
+7. Basic Commands
+8. File System Hierachy
+9. User and Group Management
+10. Permission
+11. SSH
+12. Apache
   
-### What is Linux 
+### Introduction to Linux 
+
 - Linux was developed by Linus Torvalds in 1991. <br>
 - Linux is an open source. <br>
 - Linux is free to use. <br>
 - Linux supports CLI and GUI. <br>
 - Linux is Multiuser, Multiprocessing and Multitasking. <br>
 
-- **How to login Root user** <br>
+- **For Login Root user** <br>
 
   Alt+ctrl+t = Search bar <br>
   Terminal name = gnome-terminal <br>
 
-- **How to increase font size of Terminal** <br>
+- **To increase font size of Terminal** <br>
                                              
   ctrl+shift++ add on + for increasing <br>
 
@@ -208,8 +210,11 @@ init 6 or reboot or shutdown -r
 **/ lib** = save OS configuration files <br>
 **/ mnt** = use to mounting <br>
 ### User and Group Management <br>
+
 **User** = who use the system <br>
+
 **Linux** = Types of user <br>
+
 - **Privilege user** = full power <br>
 - **Non-Privilege user** = less power <br>
 - **System user** = automatically make <br>
