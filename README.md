@@ -73,7 +73,7 @@ ls (ls-listing) Blue = folder | Black, White, Green = file
 ```
 rmdir cloud
 ```
-<img src="Screenshot from 2024-08-08 17-24-18.png"/>
+<img src="Screenshot from 2024-08-08 17-40-18.png"/>
 
 - **Delete a folder with data** <br>
 ```
