@@ -50,6 +50,9 @@
 
 - **Make a file** <br>
 ```
+touch blue
+```
+```
 vi, vim, cat
 ```
 - **Make a folder or directory** <br>
@@ -64,10 +67,14 @@ mkdir aws gcp azure
 ```
 ls (ls-listing) Blue = folder | Black, White, Green = file
 ```
+<img src="Screenshot from 2024-08-08 16-54-23.png"/>
+
 - **Delete a folder** <br>
 ```
 rmdir cloud
 ```
+<img src="Screenshot from 2024-08-08 17-24-18.png"/>
+
 - **Delete a folder with data** <br>
 ```
 rm -rf cloud (r = recursive, f = forecfully)
