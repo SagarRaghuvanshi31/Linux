@@ -2,29 +2,50 @@
 
 <img src="Linux.jpg"/>
 
+## Table of Content
+- **What is Linux**
+- **How to login Root user**
+- **How to increase font size of Terminal**
+- **How to decrease font size of Terminal**
+- **For Multiple Tab**
+- **For Closing Tab**
+- **Basic Commands**
+- **File System Hierachy**
+- **User and Group Management**
+- **Permission**
+- **SSH**
+- **Apache**
+  
+### What is Linux 
 - Linux was developed by Linus Torvalds in 1991. <br>
 - Linux is an open source. <br>
 - Linux is free to use. <br>
 - Linux supports CLI and GUI. <br>
 - Linux is Multiuser, Multiprocessing and Multitasking. <br>
 
-- **How to login Root user?** <br>
-Alt+f2 = Search bar. <br>
-Terminal name = gnome-terminal <br>
+- **How to login Root user** <br>
 
-- **How to increase font size?** <br>
-ctrl+shift++ add on + for increasing <br>
+  Alt+ctrl+t = Search bar <br>
+  Terminal name = gnome-terminal <br>
 
-- **How to decrease font size?** <br>
-ctrl + (-) <br>
+- **How to increase font size of Terminal** <br>
+                                             
+  ctrl+shift++ add on + for increasing <br>
+
+- **How to decrease font size of Terminal** <br>
+
+  ctrl + (-) <br>
 
 - **For Multiple Tab** <br>
-ctrl+shift+T
+
+  ctrl+shift+T
 
 - **For Closing Tab** <br>
-Alt+f4
+
+  Alt+f4
 
 ### Basic Commands
+
 - **Make a file** <br>
 ```
 vi, vim, cat
