@@ -49,6 +49,13 @@
 ### Basic Commands
 
 - **Make a file** <br>
+
+This command is use to make a file
+
+vi = visual editor, (vi) is a text editor <br>
+vim = vi improved, it is a improved version of vi <br>
+cat = concatenate, Display and create files <br>
+touch (blue) = blue is a file name
 ```
 touch blue
 ```
@@ -56,52 +63,118 @@ touch blue
 vi, vim, cat
 ```
 - **Make a folder or directory** <br>
+
+This command is use to make a folder <br>
+
+mkdir = make directory <br>
+cloud = folder name
 ```
 mkdir cloud
 ```
 - **Make multiple directory** <br>
+
+This command is use to make multiple directory <br>
+aws gcp azure = folders name
 ```
 mkdir aws gcp azure
 ```
 - **See the file and folder** <br>
+
+This command is use to see the file and folder
+
+ls = listing <br>
+ll = long listing <br>
+
+after the ls command you will see the output result <br>
+blue colour = folder <br>
+white, green colour = file
 ```
-ls (ls-listing) Blue = folder | Black, White, Green = file
+ls
+```
+```
+ll
 ```
 <img src="Screenshot from 2024-08-08 16-54-23.png"/>
 
 - **Delete a folder** <br>
+
+This command is use to delete a folder
+
+rmdir = remove directory <br>
+cloud = folder name <br>
 ```
 rmdir cloud
 ```
 <img src="Screenshot from 2024-08-08 17-40-18.png"/>
 
 - **Delete a folder with data** <br>
+
+This command is use to delete a folder with data <br>
+
+rm = remove <br>
+-rf = (-r = recursive, f = forcefully) <br>
+cloud = folder name
 ```
 rm -rf cloud (r = recursive, f = forecfully)
 ```
 - **Remove multiple directory** <br>
+
+this command is use to remove multiple directory
+
+rmdir = remove directory <br>
+aws gcp azure = directory name
 ```
 rmdir aws gcp azure
 ```
 - **See the data of file** <br>
+
+this command is use to see tha data of that file 
+
+cat = concatenate <br>
+asus = file name
 ```
 cat asus
 ```
 - **Delete a file without confirmation** <br>
+
+this command is use to delete a file without confirmation
+
+rm = remove <br>
+-f = forecully <br>
+asus = file name
 ```
-rm -f asus (f = forcefully)
+rm -f asus
 ```
 - **Delete a file with confirmation** <br>
+
+this command is use to delete a file with confirmation
+
+rm = remove<br>
+hp = file name
 ```
-rm hp (rm = remove)
+rm hp
 ```
 - **Come to inside a folder** <br>
+
+this command is use to come inside a folder
+
+cd = change directory<br>
+cloud = folder name <br>
 ```
-cd cloud (cd = change directory)
+cd cloud
 ```
 - **Make a sub folder** <br>
+
+this command is use to make a sub folder in a folder
+
+make a mkdir cloud directory then use cd command to change directory into cloud after that make a folder of aa 
+
+mkdir = make directory <br>
+cloud = folder name <br>
+cd cloud = change directory <br>
+aa = sub folder
 ```
-mkdir cloud - cd cloud  mkdir aa = bb cc
+mkdir cloud - cd cloud  mkdir aa
 ```
 - **See the current location** <br>
 ```
