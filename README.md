@@ -177,22 +177,37 @@ aa = sub folder
 mkdir cloud - cd cloud  mkdir aa
 ```
 - **See the current location** <br>
-```
+
+this command is use to see the present directory
+
 pwd = present working directory
 ```
+pwd 
+```
 - **Go back 1 step** <br>
+
+thsi command is use to go back 1 step from folder/file
+
+cd= change directory
 ```
 cd..
 ```
-- **Go Back 2 step** <br>
-```
-cd../../..
-```
+
 - **Go back from all** <br>
+
+this command is use to go back to the main page
 ```
 cd
 ```
 - **Add the data in file** <br>
+
+this command is use to add data in a file
+
+cat = concatenate <br>
+abc = file name <br>
+Aws is a cloud = data that we were adding <br>
+ctrl+d = for save and exit <br>
+Echo = to display text
 ```
 cat > abc
 Aws is a cloud
@@ -200,51 +215,87 @@ ctrl+d (for save and exit)
 Echo 'azure is a cloud' >> abc
 ```
 - **Copy a file** <br>
+
+this command is use to copy a file
+
+cp = copy
+aa bb = file name
 ```
-file aa(cloud) bb
+file aa bb
 cp aa bb
 ```
 - **Copy a directory** <br>
+
+this command is use to copy a directory
 ```
 test1/ aa bb cc  test2
 cp -rvf test1/aa test2
 cp -rvf test1/* test2
 ```
 - **Cut Paste a file** <br>
-```
+
+this command is use to cut paste a file
+
 mv = move
-file = aws(cloud)  azure
+aws, azure = file name
+-v = vervose
+```
+file = aws azure
 mv -v aws  azure
 ```
 - **Cut Paste a directory** <br>
+
+this command is use to cut paste a directory
 ```
 11/aa bb cc   22
 mv -v 11/aa  22
 mv -v 11/*  22
 ```
 - **Rename a filder/folder** <br>
+
+this command is use to rename a folder
+
+mv = move
+this command is use to move and rename
 ```
 mv oldname  newname
 ```
 - **Make a hidden file** <br>
+
+this command is used to make a hidden file
+
+mkdir = make directory
+.aaa = hidden file
+
 ```
-mkdir .aaa
-cat..bbb
-touch .ccc
+touch .aaa
 ```
 - **See the hidden data** <br>
+
+this command is use to see the hidden data
+
+ls = listing
+-a = archieve
 ```
-ls -a (a = archieve)
+ls -a
 ```
 - **Add new user** <br>
+
+this command is use to add a new user
 ```
-adduser or useradd
+adduser sagar <br>
+useradd raghuvanshi
 ```
 - **Check current username** <br>
+
+this command is use to check current login username
 ```
-whoami or logname
+whoami <br>
+logname
 ```
 - **See the hostname** <br>
+
+this command is used to see the hostname
 ```
 hostname or uname -n
 ```
