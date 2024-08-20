@@ -94,7 +94,6 @@ ls
 ```
 ll
 ```
-<img src="Screenshot from 2024-08-08 16-54-23.png"/>
 
 - **Delete a folder** <br>
 
@@ -105,7 +104,6 @@ cloud = folder name <br>
 ```
 rmdir cloud
 ```
-<img src="Screenshot from 2024-08-08 17-40-18.png"/>
 
 - **Delete a folder with data** <br>
 
