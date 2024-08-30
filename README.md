@@ -4,7 +4,7 @@
 
 ## Table of Content
 
-1. Introduction to Linux
+1. [Introduction to Linux](Introduction-to-Linux)
 2. For Login Root user
 3. To increase font size of Terminal
 4. To decrease font size of Terminal
