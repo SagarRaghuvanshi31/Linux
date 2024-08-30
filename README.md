@@ -5,17 +5,17 @@
 ## Table of Content
 
 1. [Introduction to Linux](#Introduction-to-Linux)
-2. For Login Root user
-3. To increase font size of Terminal
-4. To decrease font size of Terminal
-5. For Multiple Tab
-6. For Closing Tab
-7. Basic Commands
-8. File System Hierachy
-9. User and Group Management
-10. Permission
-11. SSH
-12. Apache
+2. [For Login Root user](#For-Login-Root-user)
+3. [To increase font size of Terminal](#To-increase-font-size-of-Terminal)
+4. [To decrease font size of Terminal](#To-decrease-font-size-of-Terminal)
+5. [For Multiple Tab](#For-Multiple-Tab)
+6. [For Closing Tab](#For-Closing-Tab)
+7. [Basic Commands](#Basic-Commands)
+8. [File System Hierachy](#File-System-Hierachy)
+9. [User and Group Management](#User-and-Group-Management)
+10. [Permission](#Permission)
+11. [SSH](#SSH)
+12. [Apache](#Apache)
   
 ### Introduction to Linux 
 
@@ -34,7 +34,7 @@
                                              
   ctrl+shift++ add on + for increasing <br>
 
-- **How to decrease font size of Terminal** <br>
+- **To decrease font size of Terminal** <br>
 
   ctrl + (-) <br>
 
@@ -42,7 +42,7 @@
 
   ctrl+shift+T
 
-- **For Closing Tab** <br>
+- **0** <br>
 
   Alt+f4
 
