@@ -42,7 +42,7 @@
 
   ctrl+shift+T
 
-- **0** <br>
+- **For Closing Tab** <br>
 
   Alt+f4
 
