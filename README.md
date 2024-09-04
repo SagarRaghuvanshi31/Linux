@@ -50,7 +50,7 @@
 
 - **Make a file** <br>
 
-This command is use to make a file
+Run this command to make a file
 
 vi = visual editor, (vi) is a text editor <br>
 vim = vi improved, it is a improved version of vi <br>
@@ -64,7 +64,7 @@ vi, vim, cat
 ```
 - **Make a folder or directory** <br>
 
-This command is use to make a folder <br>
+Run this command to make a folder <br>
 
 mkdir = make directory <br>
 cloud = folder name
@@ -73,14 +73,14 @@ mkdir cloud
 ```
 - **Make multiple directory** <br>
 
-This command is use to make multiple directory <br>
+Run this command to make multiple directory <br>
 aws gcp azure = folders name
 ```
 mkdir aws gcp azure
 ```
 - **See the file and folder** <br>
 
-This command is use to see the file and folder
+Run this command to see the file and folder
 
 ls = listing <br>
 ll = long listing <br>
@@ -97,7 +97,7 @@ ll
 
 - **Delete a folder** <br>
 
-This command is use to delete a folder
+Run this command to delete a folder
 
 rmdir = remove directory <br>
 cloud = folder name <br>
@@ -107,7 +107,7 @@ rmdir cloud
 
 - **Delete a folder with data** <br>
 
-This command is use to delete a folder with data <br>
+Run this command to delete a folder with data <br>
 
 rm = remove <br>
 -rf = (-r = recursive, f = forcefully) <br>
@@ -117,7 +117,7 @@ rm -rf cloud (r = recursive, f = forecfully)
 ```
 - **Remove multiple directory** <br>
 
-this command is use to remove multiple directory
+Run this command to remove multiple directory
 
 rmdir = remove directory <br>
 aws gcp azure = directory name
@@ -126,7 +126,7 @@ rmdir aws gcp azure
 ```
 - **See the data of file** <br>
 
-this command is use to see tha data of that file 
+Run this command to see tha data of that file 
 
 cat = concatenate <br>
 asus = file name
@@ -135,7 +135,7 @@ cat asus
 ```
 - **Delete a file without confirmation** <br>
 
-this command is use to delete a file without confirmation
+Run this command to delete a file without confirmation
 
 rm = remove <br>
 -f = forecully <br>
@@ -145,7 +145,7 @@ rm -f asus
 ```
 - **Delete a file with confirmation** <br>
 
-this command is use to delete a file with confirmation
+Run this command to delete a file with confirmation
 
 rm = remove<br>
 hp = file name
@@ -154,7 +154,7 @@ rm hp
 ```
 - **Come to inside a folder** <br>
 
-this command is use to come inside a folder
+Run this command to come inside a folder
 
 cd = change directory<br>
 cloud = folder name <br>
@@ -163,7 +163,7 @@ cd cloud
 ```
 - **Make a sub folder** <br>
 
-this command is use to make a sub folder in a folder
+Run this command to make a sub folder in a folder
 
 make a mkdir cloud directory then use cd command to change directory into cloud after that make a folder of aa 
 
@@ -176,7 +176,7 @@ mkdir cloud - cd cloud  mkdir aa
 ```
 - **See the current location** <br>
 
-this command is use to see the present directory
+Run this command to see the present directory
 
 pwd = present working directory
 ```
@@ -184,7 +184,7 @@ pwd
 ```
 - **Go back 1 step** <br>
 
-thsi command is use to go back 1 step from folder/file
+Run this command to go back 1 step from folder/file
 
 cd= change directory
 ```
@@ -193,13 +193,13 @@ cd..
 
 - **Go back from all** <br>
 
-this command is use to go back to the main page
+Run this command to go back to the main page
 ```
 cd
 ```
 - **Add the data in file** <br>
 
-this command is use to add data in a file
+Run this command to add data in a file
 
 cat = concatenate <br>
 abc = file name <br>
@@ -214,7 +214,7 @@ Echo 'azure is a cloud' >> abc
 ```
 - **Copy a file** <br>
 
-this command is use to copy a file
+Run this command to copy a file
 
 cp = copy
 aa bb = file name
@@ -224,7 +224,7 @@ cp aa bb
 ```
 - **Copy a directory** <br>
 
-this command is use to copy a directory
+Run this command to copy a directory
 ```
 test1/ aa bb cc  test2
 cp -rvf test1/aa test2
@@ -232,7 +232,7 @@ cp -rvf test1/* test2
 ```
 - **Cut Paste a file** <br>
 
-this command is use to cut paste a file
+Run this command to cut paste a file
 
 mv = move
 aws, azure = file name
@@ -243,7 +243,7 @@ mv -v aws  azure
 ```
 - **Cut Paste a directory** <br>
 
-this command is use to cut paste a directory
+Run this command to cut paste a directory
 ```
 11/aa bb cc   22
 mv -v 11/aa  22
@@ -251,7 +251,7 @@ mv -v 11/*  22
 ```
 - **Rename a filder/folder** <br>
 
-this command is use to rename a folder
+Run this command to rename a folder
 
 mv = move
 this command is use to move and rename
@@ -260,7 +260,7 @@ mv oldname  newname
 ```
 - **Make a hidden file** <br>
 
-this command is used to make a hidden file
+Run this command to make a hidden file
 
 mkdir = make directory
 .aaa = hidden file
@@ -270,7 +270,7 @@ touch .aaa
 ```
 - **See the hidden data** <br>
 
-this command is use to see the hidden data
+Run this command to see the hidden data
 
 ls = listing
 -a = archieve
@@ -279,51 +279,71 @@ ls -a
 ```
 - **Add new user** <br>
 
-this command is use to add a new user
+Run this command to add a new user
 ```
 adduser sagar <br>
 useradd raghuvanshi
 ```
 - **Check current username** <br>
 
-this command is use to check current login username
+Run this command to check current login username
 ```
 whoami <br>
 logname
 ```
 - **See the hostname** <br>
 
-this command is used to see the hostname
+Run this command to see the hostname
 ```
 hostname or uname -n
 ```
 - **Change the hostname temporary** <br>
+
+Run this command to change hostname temporary
 ```
 hostname sky
 bash
 ```
 - **Change the name permanently** <br>
+
+Run this command to change permanentaly
+
+nmtui = network manager terminal user interface <br>
+bash = Bourne Again SHell
 ```
-nmtui = network manager terminal user interface
+nmtui
 bash
 ```
 - **See the all info** <br>
+
+Run this command to all system info
+
+uname = Unix name <br>
+-a = archieve
 ```
 uname -a
 ```
 - **See the date and time** <br>
+
+Run this command to see date and time
 ```
 date
 ```
 - **Change the date and time** <br>
+
+Run this command to change date and time
 ```
 date -s "2 jan 2050 18:30:45"
 ```
 - **Shutdown the server** <br>
+
+Run this command to shutdown the server
 ```
 init 0 or shutdown -p or poweroff
 ```
 - **Restart the Server** <br>
+
+Run this command to restart the server
 ```
 init 6 or reboot or shutdown -r
 ```
