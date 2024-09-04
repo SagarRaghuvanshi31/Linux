@@ -5,7 +5,7 @@
 ## Table of Content
 
 1. [Introduction to Linux](#Introduction-to-Linux)
-2. [For Login Root user](#For-Login-Root-user)
+2. [To Login Root user](#For-Login-Root-user)
 3. [To increase font size of Terminal](#To-increase-font-size-of-Terminal)
 4. [To decrease font size of Terminal](#To-decrease-font-size-of-Terminal)
 5. [For Multiple Tab](#For-Multiple-Tab)
@@ -28,6 +28,7 @@
 ### To install Ubuntu
 
 - **Version** <br>
+
 Ubuntu 22.04.4 LTS
 
 1. Visit Ubuntu’s official website: https://ubuntu.com/ <br>
@@ -64,9 +65,10 @@ Click "Install Now" to start the installation process. <br>
 Once the installation is complete, your computer will restart.
 
 
-- **For Login Root user** <br>
+- **To Login Root user** <br>
 
   Alt+Ctrl+T = Open terminal <br>
+  
   Terminal name = gnome-terminal <br>
 
 - **To increase font size of Terminal** <br>
@@ -97,6 +99,7 @@ vi = visual editor, (vi) is a text editor <br>
 vim = vi improved, it is a improved version of vi <br>
 cat = Concatenate, Display and create files <br>
 blue = blue is a file name
+
 ```
 touch blue
 ```
@@ -115,7 +118,9 @@ mkdir cloud
 - **Make multiple directory** <br>
 
 Run this command to make multiple directory <br>
+
 aws gcp azure = folders name
+
 ```
 mkdir aws gcp azure
 ```
@@ -129,6 +134,7 @@ ll = long listing <br>
 after ls command you will see the output result <br>
 blue colour = folder <br>
 white, green colour = file
+
 ```
 ls
 ```
@@ -150,6 +156,7 @@ Run this command to delete a folder
 
 rmdir = remove directory <br>
 cloud = folder name <br>
+
 ```
 rmdir cloud
 ```
@@ -167,6 +174,7 @@ Run this command to delete a folder with data <br>
 rm = remove <br>
 -rf = (-r = recursive, f = forcefully) <br>
 cloud = folder name
+
 ```
 rm -rf cloud
 ```
@@ -182,6 +190,7 @@ Run this command to remove multiple directory
 
 rmdir = remove directory <br>
 aws gcp azure = directory name
+
 ```
 rmdir aws gcp azure
 ```
@@ -197,6 +206,7 @@ Run this command to see tha data of that file
 
 cat = concatenate <br>
 asus = file name
+
 ```
 cat asus
 ```
@@ -214,6 +224,7 @@ Run this command to delete a file without confirmation
 rm = remove <br>
 -f = forecully <br>
 asus = file sky
+
 ```
 rm -f sky
 ```
@@ -232,6 +243,7 @@ Run this command to come inside a folder
 
 cd = change directory<br>
 cloud = folder name <br>
+
 ```
 mkdir cloud
 cd cloud
@@ -247,6 +259,7 @@ root@sagar:~ /cloud #
 Run this command to see the present directory
 
 pwd = present working directory
+
 ```
 pwd 
 ```
@@ -260,6 +273,7 @@ root@sagar:~ # pwd <br>
 Run this command to go back 1 step from folder/file
 
 cd= change directory
+
 ```
 cd ..
 ```
@@ -271,6 +285,7 @@ root@sagar:~ /cloud/ad#
 - **Go back from all** <br>
 
 Run this command to go back to the main page
+
 ```
 cd
 ```
@@ -288,6 +303,7 @@ abc = file name <br>
 Aws is a cloud = data that we were adding <br>
 ctrl+d = for save and exit <br>
 Echo = to display text
+
 ```
 cat > abc
 Aws is a cloud
@@ -311,6 +327,7 @@ Run this command to copy a file
 
 cp = copy <br>
 aa bb = file name
+
 ```
 file aa bb
 cp aa bb
@@ -329,6 +346,7 @@ Run this command to copy a directory
 
 cp = copy <br>
 -rvf = recursive, verbose, forcefully
+
 ```
 test1/ aa bb cc  test2
 cp -rvf test1/aa test
@@ -346,6 +364,7 @@ Run this command to cut paste a file
 mv = move
 aws, azure = file name
 -v = vervose
+
 ```
 mv -v aws  azure
 ```
@@ -361,6 +380,7 @@ aa  agg  aw    bb     blue   cd  light  rahul  software
 - **Cut Paste a directory** <br>
 
 Run this command to cut paste a directory
+
 ```
 11/aa bb cc   22
 mv -v 11/aa  22
@@ -381,6 +401,7 @@ Run this command to rename a folder
 
 mv = move  <br>
 this command is use to move and rename
+
 ```
 mv oldname  newname
 ```
@@ -408,6 +429,7 @@ Run this command to see the hidden data
 
 ls = listing  <br>
 -a = archieve
+
 ```
 ls -a
 ```
@@ -432,6 +454,7 @@ aa              .gnupg               snap
 - **Add new user** <br>
 
 Run this command to add a new user
+
 ```
 adduser raghuvanshi <br>
 ```
@@ -444,9 +467,9 @@ raghuvanshi:x:1003:1004:,,,:/home/raghuvanshi:/bin/bash
 - **Check current username** <br>
 
 Run this command to check current login username
+
 ```
-whoami <br>
-logname
+whoami 
 ```
 
 **Output**
@@ -456,6 +479,7 @@ root
 - **See the hostname** <br>
 
 Run this command to see the hostname
+
 ```
 hostname or uname -n
 ```
@@ -469,6 +493,7 @@ sagar
 - **Change the hostname temporary** <br>
 
 Run this command to change hostname temporary
+
 ```
 hostname sky
 bash
@@ -485,6 +510,7 @@ Run this command to change permanentaly
 
 nmtui = network manager terminal user interface <br>
 bash = Bourne Again SHell
+
 ```
 nmtui
 bash
@@ -495,6 +521,7 @@ Run this command to all system info
 
 uname = Unix name <br>
 -a = archieve
+
 ```
 uname -a
 ```
@@ -506,12 +533,14 @@ Linux sky 6.8.0-40-generic #40~22.04.3-Ubuntu SMP PREEMPT_DYNAMIC Tue Jul 30 17:
 - **See the date and time** <br>
 
 Run this command to see date and time
+
 ```
 date
 ```
 - **Change the date and time** <br>
 
 Run this command to change date and time
+
 ```
 date -s "2 jan 2050 18:30:45"
 ```
@@ -523,12 +552,14 @@ Wednesday 04 September 2024 10:28:53 PM IST
 - **Shutdown the server** <br>
 
 Run this command to shutdown the server
+
 ```
 init 0 or shutdown -p or poweroff
 ```
 - **Restart the Server** <br>
 
 Run this command to restart the server
+
 ```
 init 6 or reboot or shutdown -r
 ```
@@ -561,20 +592,28 @@ init 6 or reboot or shutdown -r
 **Linux** = Types of user <br>
 
 - **Privilege user** = full power <br>
+
 - **Non-Privilege user** = less power <br>
+
 - **System user** = automatically make <br>
 
 kernal not understand the username, it understand ID (UID = user identification)
+
 - **Privilege user** = RHEL 5,6,7,8,9 = UID = 0
+- 
 - **Non-Privilege user** = RHEL 5,6 = 500 or above
+- 
 - **System user** = RHEL 5,6 = 1-499, RHEL 7,8,9 = 1-999
 
 ### User Management
+
 **Make a user** <br>
+
 ```
 useradd harsh or adduser harsh <br>
 ```
 **To list user** <br>
+
 cat = concatenate <br>
 grep = Global Regular Expression Print, Searches text for patterns and prints lines that match.
 ```
@@ -585,6 +624,7 @@ root@sagar:~ # cat /etc/passwd | grep harsh <br>
 harsh:x:1003:1003::/home/harsh:/bin/sh
 
 **Give the Password** <br>
+
 ```
 passwd harsh <br>
 ```
@@ -597,16 +637,20 @@ Retype new password: <br>
 passwd: password updated successfully 
 
 **Delete the user but keep data** <br>
+
 ```
 userdel harsh <br>
 ```
 **Delete the user with data** <br>
+
 ```
 userdel -r test 
 ```
 
 ### User modification
+
 **Change the login name** <br>
+
 l = login name <br>
 ```
 usermod -l vivek harsh
@@ -617,6 +661,7 @@ root@sagar:~ # usermod -l vivek harsh <br>
 vivek:x:1003:1003::/home/harsh:/bin/sh 
 
 **Change UID** <br>
+
 ```
 usermod -u 2000 vivek (u = uid) <br>
 ```
@@ -631,10 +676,13 @@ root@sagar:~# cat /etc/passwd | grep vivek <br>
 vivek:x:2000:1003::/home/harsh:/bin/sh
 
 **Give the comment** <br>
+
 ```
 usermod -c "IT ADMIN" username (c = comment) <br>
 ```
+
 **Change the home directory** <br>
+
 ```
 mkdir /data <br>
 chmod 777 /data = change permission <br>
@@ -642,36 +690,42 @@ usermod -d /data name (d = directory)
 ```
 
 ### Group Management
+
 **Group** = collection of users <br>
 
 **Types of group**
+
 - **Primary Group** = automatically make <br>
+
 - **Secondary Group** = we have to make <br>
 
 **Make a secondary group** <br>
+
 ```
 groupadd hr <br>
 ```
 **To check added group** <br>
+
 ```
 getent group hr
 ```
 
 **Output**
-root@sky:~ # groupadd hr
-root@sky:~ # getent group hr
+root@sky:~ # groupadd hr  <br>
+root@sky:~ # getent group hr  <br>
 hr:x:1006:
 
 **Delete the secondary group** <br>
+
 ```
 groupdel hr 
-vim /etc/group <br>
+vim /etc/group 
 ```
 
 **Output** <br>
 root@sagar:~ # groupadd hr <br>
-root@sagar:~ # getent group hr
-hr:x:1003:
+root@sagar:~ # getent group hr  <br>
+hr:x:1003:  <br>
 root@sagar:~ # groupdel hr <br>
 root@sagar:~ # getent group hr <br>
 
@@ -691,14 +745,19 @@ azure = name <br>
 **Types of Permission**
 
 - **Read** = read the data = r <br>
+
 - **Write** = edit the data = w <br>
+
 - **Execute** = come to inside the folder, file = x <br>
+
 - **No Permission** = -
 
 **User** <br>
 
 - **Privilege** = rwx <br>
+
 - **Non-Privilege** = r-w <br>
+
 - **System User** = r-x <br>
 
 **Change the Permission** <br>
@@ -709,6 +768,7 @@ azure = name <br>
  touch aa
  chmod 777 aa
 ```
+
 **Output**
   
 root@sagar:~ # touch aa <br>
@@ -724,13 +784,16 @@ root@sagar:~ # ls -l aa <br>
 **Ssh** = Secure Shell <br>
 it is a protocol which is use to take the console of linux remotly. <br>
 it's port no. is 22. <br>
+
 **service** = sshd (secure shell domain) <br>
 
 **Configuration file** 
+
 ```
 /etc/ssh/sshd_config <br>
 ```
 **log file**  
+
 ```
 /var/log/secure <br>
 ```
@@ -751,10 +814,12 @@ It is also called webserver <br>
 ```
 httpd demon
 ```
+
 **package name** 
 ```
 httpd
 ```
+
 **configuration file** 
 ```
 /etc/httpd/conf/httpd.conf
