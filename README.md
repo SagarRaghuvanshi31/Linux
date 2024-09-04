@@ -222,8 +222,8 @@ rm -f sky
 root@sagar:~ # touch sky <br>
 root@sagar:~ # ls <br>
 aa  agg  asus  aw  blue  rahul  sky  snap  software <br>
-root@sagar:~# rm sky <br>
-root@sagar:~# ls <br>
+root@sagar:~ # rm sky <br>
+root@sagar:~ # ls <br>
 aa  agg  asus  aw  blue  rahul  snap  software
 
 - **Come to inside a folder** <br>
@@ -238,9 +238,9 @@ cd cloud
 ```
 
 **Output** <br>
-root@sagar:~ # mkdir cloud
-root@sagar:~ # cd cloud
-root@sagar:~/cloud #
+root@sagar:~ # mkdir cloud <br>
+root@sagar:~ # cd cloud <br>
+root@sagar:~ /cloud #
 
 - **See the current location** <br>
 
@@ -261,12 +261,12 @@ Run this command to go back 1 step from folder/file
 
 cd= change directory
 ```
-cd..
+cd ..
 ```
 
 **Output**
-root@sagar:~/cloud/ad/dc# cd ..  <br>
-root@sagar:~/cloud/ad# 
+root@sagar:~ /cloud/ad/dc# cd ..  <br>
+root@sagar:~ /cloud/ad# 
 
 - **Go back from all** <br>
 
@@ -276,8 +276,8 @@ cd
 ```
 
 **Output**
-root@sagar:~/cloud/ad/dc# cd
-root@sagar:~# 
+root@sagar:~ /cloud/ad/dc# cd <br>
+root@sagar:~ # 
 
 - **Add the data in file** <br>
 
@@ -351,11 +351,11 @@ mv -v aws  azure
 ```
 
 **Output**
-root@sky:~ # touch aws azure
-root@sky:~ # mv -v aws azure
-renamed 'aws' -> 'azure'
-root@sky:~ # ls
--   abc  asus  azure  black  cc  cloud  mkdir  snap
+root@sky:~ # touch aws azure <br>
+root@sky:~ # mv -v aws azure  <br>
+renamed 'aws' -> 'azure'  <br>
+root@sky:~ # ls  <br>
+abc  asus  azure  black  cc  cloud  mkdir  snap  <br>
 aa  agg  aw    bb     blue   cd  light  rahul  software
 
 - **Cut Paste a directory** <br>
@@ -368,35 +368,35 @@ mv -v 11/*  22
 ```
 
 **Output**
-root@sky:~ # mv -v 11/ dd 22
-renamed '11/' -> '22/11'
-renamed 'dd' -> '22/dd'
-root@sky:~ # ls
--   abc  asus  azure  blue  cloud  light  rahul  software
+root@sky:~ # mv -v 11/ dd 22  <br>
+renamed '11/' -> '22/11'  <br>
+renamed 'dd' -> '22/dd' v
+root@sky:~ # ls  <br>
+abc  asus  azure  blue  cloud  light  rahul  software  <br>
 22  agg  aw    black  cd    ee     mkdir  snap
 
 - **Rename a filder/folder** <br>
 
 Run this command to rename a folder
 
-mv = move
+mv = move  <br>
 this command is use to move and rename
 ```
 mv oldname  newname
 ```
 
 **Output**
-root@sky:~ # touch oldname
-root@sky:~ # mv oldname newname
-root@sky:~ # ls
--   abc  asus  azure  blue  cloud  light  newname  snap
+root@sky:~ # touch oldname <br>
+root@sky:~ # mv oldname newname  <br>
+root@sky:~ # ls  <br>
+abc  asus  azure  blue  cloud  light  newname  snap  <br>
 22  agg  aw    black  cd    ee     mkdir  rahul    software
 
 - **Make a hidden file** <br>
 
 Run this command to make a hidden file
 
-mkdir = make directory
+mkdir = make directory  <br>
 .aaa = hidden file
 
 ```
@@ -406,22 +406,22 @@ touch .aaa
 
 Run this command to see the hidden data
 
-ls = listing
+ls = listing  <br>
 -a = archieve
 ```
 ls -a
 ```
 
 **Output**
-sagar@sagar:~$ touch .aaa
-sagar@sagar:~$ ls
- -     aws     Desktop     mouse.py   __pycache__       Untitled1.ipynb   web
+sagar@sagar:~ $ touch .aaa  <br>
+sagar@sagar:~ $ ls  <br>
+ aws     Desktop     mouse.py   __pycache__       Untitled1.ipynb   web
 '='    azure   Documents   Music      PycharmProjects   Untitled.ipynb
  aa    bb      Downloads   myenv      snap              untitled.py
  aaa   blue    gcp         np         Templates         util.py
  abc   cc      Linux       Pictures   test1             venv
 
-sagar@sagar:~$ ls -a
+sagar@sagar:~ $ ls -a  <br>
 aa              .gnupg               snap
  .aaa            .gphoto              .ssh
  aaa             .idea                .sudo_as_admin_successful
@@ -437,8 +437,8 @@ adduser raghuvanshi <br>
 ```
 
 **Output**
-root@sagar:~ # adduser raghuvanshi
-root@sagar:~ # getent passwd raghuvanshi
+root@sagar:~ # adduser raghuvanshi  <br>
+root@sagar:~ # getent passwd raghuvanshi  <br>
 raghuvanshi:x:1003:1004:,,,:/home/raghuvanshi:/bin/bash
 
 - **Check current username** <br>
@@ -448,6 +448,11 @@ Run this command to check current login username
 whoami <br>
 logname
 ```
+
+**Output**
+root@sagar:~ # whoami
+root
+
 - **See the hostname** <br>
 
 Run this command to see the hostname
@@ -456,8 +461,10 @@ hostname or uname -n
 ```
 
 **Output**
-root@sagar:~ # whoami
-root
+sagar@sagar:~ $ uname -n <br>
+sagar <br>
+sagar@sagar:~ $ hostname <br>
+sagar
 
 - **Change the hostname temporary** <br>
 
@@ -468,8 +475,8 @@ bash
 ```
 
 **Output**
-root@sagar:~ # hostname sky
-root@sagar:~ # bash
+root@sagar:~ # hostname sky <br>
+root@sagar:~ # bash  <br>
 root@sky:~ #
 
 - **Change the name permanently** <br>
@@ -493,7 +500,7 @@ uname -a
 ```
 
 **Output**
-root@sky:~ # uname -a
+root@sky:~ # uname -a  <br>
 Linux sky 6.8.0-40-generic #40~22.04.3-Ubuntu SMP PREEMPT_DYNAMIC Tue Jul 30 17:30:19 UTC 2 x86_64 x86_64 x86_64 GNU/Linux
 
 - **See the date and time** <br>
@@ -510,7 +517,7 @@ date -s "2 jan 2050 18:30:45"
 ```
 
 **Output**
-root@sky:~ # date
+root@sky:~ # date  <br>
 Wednesday 04 September 2024 10:28:53 PM IST
 
 - **Shutdown the server** <br>
