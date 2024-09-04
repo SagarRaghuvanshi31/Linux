@@ -20,23 +20,64 @@
 ### Introduction to Linux 
 
 - Linux was developed by Linus Torvalds in 1991. <br>
-- Linux is an open source. <br>
+- Linux is open source. <br>
 - Linux is free to use. <br>
 - Linux supports CLI and GUI. <br>
-- Linux is Multiuser, Multiprocessing and Multitasking. <br>
+- Linux is multiuser, multiprocessing and multitasking. <br>
+
+### To install Ubuntu
+
+- **Version** <br>
+Ubuntu 22.04.4 LTS
+
+1. Visit Ubuntu’s official website: https://ubuntu.com/ <br>
+Download the latest LTS (long-term support) for the computer's system (usually 64-bit). <br>
+
+2. Create a Bootable USB Drive: <br>
+Use a tool like Rufus, Etcher, or Unetbootin to create a bootable USB drive from the downloaded ISO. <br>
+
+3. Boot from the USB Drive: <br>
+Restart the computer and enter the BIOS or UEFI settings. <br>
+Find the options for boot order and set the USB drive as the most important. <br>
+Save the changes and exit. <br>
+
+4. Launch the Ubuntu installer: <br>
+Once your computer boots from the USB drive, you will see the Ubuntu installer. <br>
+Select your language and click "Install Ubuntu." <br>
+
+5. Select the installation type: <br>
+Decide how you want to install Ubuntu: <br>
+Normal Installation: Ubuntu will replace your current operating system. <br>
+Wipe the disk and install Ubuntu: This will wipe all the data on your hard drive and install Ubuntu. <br>
+Something else: This program allows you to manually partition your hard drive and add Ubuntu to other operating systems. <br>
+
+6. Choose your time zone and keyboard layout: <br>
+Select location and keyboard layout. <br>
+
+7. Create a user account: <br>
+Enter your username, username, and password. <br>
+
+8. Start the installation: <br>
+Click "Install Now" to start the installation process. <br>
+
+9. Restart your computer: <br>
+Once the installation is complete, your computer will restart.
+
 
 - **For Login Root user** <br>
 
-  Alt+ctrl+t = Search bar <br>
+  Alt+Ctrl+T = Open terminal <br>
   Terminal name = gnome-terminal <br>
 
 - **To increase font size of Terminal** <br>
+
+'+' = to increase font size of terminal
                                              
-  ctrl+shift++ add on + for increasing <br>
+  Ctrl+Shift ++ add on + for increasing <br>
 
 - **To decrease font size of Terminal** <br>
 
-  ctrl + (-) <br>
+  ctrl + '-' <br>
 
 - **For Multiple Tab** <br>
 
@@ -44,7 +85,7 @@
 
 - **For Closing Tab** <br>
 
-  Alt+f4
+  Alt+F4
 
 ### Basic Commands
 
@@ -54,8 +95,8 @@ Run this command to make a file
 
 vi = visual editor, (vi) is a text editor <br>
 vim = vi improved, it is a improved version of vi <br>
-cat = concatenate, Display and create files <br>
-touch (blue) = blue is a file name
+cat = Concatenate, Display and create files <br>
+blue = blue is a file name
 ```
 touch blue
 ```
@@ -85,7 +126,7 @@ Run this command to see the file and folder
 ls = listing <br>
 ll = long listing <br>
 
-after the ls command you will see the output result <br>
+after ls command you will see the output result <br>
 blue colour = folder <br>
 white, green colour = file
 ```
@@ -94,6 +135,14 @@ ls
 ```
 ll
 ```
+
+**Output** <br>
+root@sagar:~ # touch blue <br>
+root@sagar:~ # mkdir cloud <br>
+root@sagar:~ # mkdir aws gcp azure <br>
+root@sagar:~ # ls <br>
+aa  agg  aw  aws  azure  blue  cloud  gcp  rahul  snap  software
+
 
 - **Delete a folder** <br>
 
@@ -105,6 +154,12 @@ cloud = folder name <br>
 rmdir cloud
 ```
 
+**Output**
+root@sagar:~ # rmdir cloud <br>
+root@sagar:~ # ls <br>
+aa  agg  aw  aws  azure  blue  gcp  rahul  snap  software
+
+
 - **Delete a folder with data** <br>
 
 Run this command to delete a folder with data <br>
@@ -113,8 +168,14 @@ rm = remove <br>
 -rf = (-r = recursive, f = forcefully) <br>
 cloud = folder name
 ```
-rm -rf cloud (r = recursive, f = forecfully)
+rm -rf cloud
 ```
+
+**Output** <br>
+rm -rf cloud <br>
+root@sagar:~ # ls <br>
+aa  agg  aw  blue  rahul  snap  software
+
 - **Remove multiple directory** <br>
 
 Run this command to remove multiple directory
@@ -124,6 +185,12 @@ aws gcp azure = directory name
 ```
 rmdir aws gcp azure
 ```
+
+**Output**
+root@sagar:~ # rmdir aws gcp azure <br>
+root@sagar:~ # ls <br>
+aa  agg  aw  blue  rahul  snap  software
+
 - **See the data of file** <br>
 
 Run this command to see tha data of that file 
@@ -133,25 +200,32 @@ asus = file name
 ```
 cat asus
 ```
+
+**Output** <br>
+root@sagar:~ # vi asus <br>
+root@sagar:~ # cat asus <br>
+abc <br>
+is am are
+
 - **Delete a file without confirmation** <br>
 
 Run this command to delete a file without confirmation
 
 rm = remove <br>
 -f = forecully <br>
-asus = file name
+asus = file sky
 ```
-rm -f asus
+rm -f sky
 ```
-- **Delete a file with confirmation** <br>
 
-Run this command to delete a file with confirmation
+**Output** <br>
+root@sagar:~ # touch sky <br>
+root@sagar:~ # ls <br>
+aa  agg  asus  aw  blue  rahul  sky  snap  software <br>
+root@sagar:~# rm sky <br>
+root@sagar:~# ls <br>
+aa  agg  asus  aw  blue  rahul  snap  software
 
-rm = remove<br>
-hp = file name
-```
-rm hp
-```
 - **Come to inside a folder** <br>
 
 Run this command to come inside a folder
@@ -159,21 +233,15 @@ Run this command to come inside a folder
 cd = change directory<br>
 cloud = folder name <br>
 ```
+mkdir cloud
 cd cloud
 ```
-- **Make a sub folder** <br>
 
-Run this command to make a sub folder in a folder
+**Output** <br>
+root@sagar:~ # mkdir cloud
+root@sagar:~ # cd cloud
+root@sagar:~/cloud #
 
-make a mkdir cloud directory then use cd command to change directory into cloud after that make a folder of aa 
-
-mkdir = make directory <br>
-cloud = folder name <br>
-cd cloud = change directory <br>
-aa = sub folder
-```
-mkdir cloud - cd cloud  mkdir aa
-```
 - **See the current location** <br>
 
 Run this command to see the present directory
@@ -182,6 +250,11 @@ pwd = present working directory
 ```
 pwd 
 ```
+
+**Output**
+root@sagar:~ # pwd <br>
+/root
+
 - **Go back 1 step** <br>
 
 Run this command to go back 1 step from folder/file
@@ -191,12 +264,21 @@ cd= change directory
 cd..
 ```
 
+**Output**
+root@sagar:~/cloud/ad/dc# cd ..  <br>
+root@sagar:~/cloud/ad# 
+
 - **Go back from all** <br>
 
 Run this command to go back to the main page
 ```
 cd
 ```
+
+**Output**
+root@sagar:~/cloud/ad/dc# cd
+root@sagar:~# 
+
 - **Add the data in file** <br>
 
 Run this command to add data in a file
@@ -209,27 +291,54 @@ Echo = to display text
 ```
 cat > abc
 Aws is a cloud
-ctrl+d (for save and exit)
+ctrl+d 
 Echo 'azure is a cloud' >> abc
 ```
+
+**Output**
+sagar@sagar:~ $ cat > abc <br>
+aws is a cloud <br>
+sagar@sagar:~ $ cat abc <br>
+aws is a cloud <br>
+sagar@sagar:~ $ echo 'azure is a cloud' >> abc <br>
+sagar@sagar:~ $ cat abc <br>
+aws is a cloud <br>
+azure is a cloud
+
 - **Copy a file** <br>
 
 Run this command to copy a file
 
-cp = copy
+cp = copy <br>
 aa bb = file name
 ```
 file aa bb
 cp aa bb
 ```
+
+**Output**
+sagar@sagar:~ $ cat > aa <br>
+1234 <br>
+sagar@sagar:~ $ cp aa bb <br>
+sagar@sagar:~ $ cat bb <br>
+1234
+
 - **Copy a directory** <br>
 
 Run this command to copy a directory
+
+cp = copy <br>
+-rvf = recursive, verbose, forcefully
 ```
 test1/ aa bb cc  test2
-cp -rvf test1/aa test2
-cp -rvf test1/* test2
+cp -rvf test1/aa test
 ```
+
+**Output**
+sagar@sagar:~ $ test1/ aa bb cc  test2 <br>
+sagar@sagar:~ $ cp -rvf test1/* test2 <br>
+sagar@sagar:~ $ test1  test2/aa bb cc
+
 - **Cut Paste a file** <br>
 
 Run this command to cut paste a file
@@ -238,9 +347,17 @@ mv = move
 aws, azure = file name
 -v = vervose
 ```
-file = aws azure
 mv -v aws  azure
 ```
+
+**Output**
+root@sky:~ # touch aws azure
+root@sky:~ # mv -v aws azure
+renamed 'aws' -> 'azure'
+root@sky:~ # ls
+-   abc  asus  azure  black  cc  cloud  mkdir  snap
+aa  agg  aw    bb     blue   cd  light  rahul  software
+
 - **Cut Paste a directory** <br>
 
 Run this command to cut paste a directory
@@ -249,6 +366,15 @@ Run this command to cut paste a directory
 mv -v 11/aa  22
 mv -v 11/*  22
 ```
+
+**Output**
+root@sky:~ # mv -v 11/ dd 22
+renamed '11/' -> '22/11'
+renamed 'dd' -> '22/dd'
+root@sky:~ # ls
+-   abc  asus  azure  blue  cloud  light  rahul  software
+22  agg  aw    black  cd    ee     mkdir  snap
+
 - **Rename a filder/folder** <br>
 
 Run this command to rename a folder
@@ -258,6 +384,14 @@ this command is use to move and rename
 ```
 mv oldname  newname
 ```
+
+**Output**
+root@sky:~ # touch oldname
+root@sky:~ # mv oldname newname
+root@sky:~ # ls
+-   abc  asus  azure  blue  cloud  light  newname  snap
+22  agg  aw    black  cd    ee     mkdir  rahul    software
+
 - **Make a hidden file** <br>
 
 Run this command to make a hidden file
@@ -277,13 +411,36 @@ ls = listing
 ```
 ls -a
 ```
+
+**Output**
+sagar@sagar:~$ touch .aaa
+sagar@sagar:~$ ls
+ -     aws     Desktop     mouse.py   __pycache__       Untitled1.ipynb   web
+'='    azure   Documents   Music      PycharmProjects   Untitled.ipynb
+ aa    bb      Downloads   myenv      snap              untitled.py
+ aaa   blue    gcp         np         Templates         util.py
+ abc   cc      Linux       Pictures   test1             venv
+
+sagar@sagar:~$ ls -a
+aa              .gnupg               snap
+ .aaa            .gphoto              .ssh
+ aaa             .idea                .sudo_as_admin_successful
+ abc             .ipynb_checkpoints   Templates
+ asd             .ipython             test1
+ aws             .java                test2
+ 
 - **Add new user** <br>
 
 Run this command to add a new user
 ```
-adduser sagar <br>
-useradd raghuvanshi
+adduser raghuvanshi <br>
 ```
+
+**Output**
+root@sagar:~ # adduser raghuvanshi
+root@sagar:~ # getent passwd raghuvanshi
+raghuvanshi:x:1003:1004:,,,:/home/raghuvanshi:/bin/bash
+
 - **Check current username** <br>
 
 Run this command to check current login username
@@ -297,6 +454,11 @@ Run this command to see the hostname
 ```
 hostname or uname -n
 ```
+
+**Output**
+root@sagar:~ # whoami
+root
+
 - **Change the hostname temporary** <br>
 
 Run this command to change hostname temporary
@@ -304,6 +466,12 @@ Run this command to change hostname temporary
 hostname sky
 bash
 ```
+
+**Output**
+root@sagar:~ # hostname sky
+root@sagar:~ # bash
+root@sky:~ #
+
 - **Change the name permanently** <br>
 
 Run this command to change permanentaly
@@ -323,6 +491,11 @@ uname = Unix name <br>
 ```
 uname -a
 ```
+
+**Output**
+root@sky:~ # uname -a
+Linux sky 6.8.0-40-generic #40~22.04.3-Ubuntu SMP PREEMPT_DYNAMIC Tue Jul 30 17:30:19 UTC 2 x86_64 x86_64 x86_64 GNU/Linux
+
 - **See the date and time** <br>
 
 Run this command to see date and time
@@ -335,6 +508,11 @@ Run this command to change date and time
 ```
 date -s "2 jan 2050 18:30:45"
 ```
+
+**Output**
+root@sky:~ # date
+Wednesday 04 September 2024 10:28:53 PM IST
+
 - **Shutdown the server** <br>
 
 Run this command to shutdown the server
@@ -389,32 +567,62 @@ kernal not understand the username, it understand ID (UID = user identification)
 ```
 useradd harsh or adduser harsh <br>
 ```
+**To list user** <br>
+cat = concatenate <br>
+grep = Global Regular Expression Print, Searches text for patterns and prints lines that match.
+```
+cat /etc/passwd | grep harsh
+```
+**Output**
+root@sagar:~ # cat /etc/passwd | grep harsh <br>
+harsh:x:1003:1003::/home/harsh:/bin/sh
+
 **Give the Password** <br>
 ```
 passwd harsh <br>
 ```
-**Make a user without password** <br>
-```
-passwd -d harsh (d = delete)
-```
+
+**Output** <br>
+root@sagar:~ # passwd harsh <br>
+New password: <br>
+BAD PASSWORD: The password is shorter than 8 characters <br>
+Retype new password: <br>
+passwd: password updated successfully 
+
 **Delete the user but keep data** <br>
 ```
 userdel harsh <br>
 ```
 **Delete the user with data** <br>
 ```
-userdel -r test (r = recursive) <br>
+userdel -r test 
 ```
 
 ### User modification
 **Change the login name** <br>
+l = login name <br>
 ```
-usermod -l newname oldname (l = loginname) <br>
+usermod -l vivek harsh
 ```
+
+**Output** <br>
+root@sagar:~ # usermod -l vivek harsh <br>
+vivek:x:1003:1003::/home/harsh:/bin/sh 
+
 **Change UID** <br>
 ```
-usermod -u 2000 name (u = uid) <br>
+usermod -u 2000 vivek (u = uid) <br>
 ```
+
+**Output** <br>
+root@sagar:~ # cat /etc/passwd | grep vivek <br>
+vivek:x:1003:1003::/home/harsh:/bin/sh
+
+root@sagar:~ # usermod -u 2000 vivek usermod -u 2000
+
+root@sagar:~# cat /etc/passwd | grep vivek <br>
+vivek:x:2000:1003::/home/harsh:/bin/sh
+
 **Give the comment** <br>
 ```
 usermod -c "IT ADMIN" username (c = comment) <br>
@@ -435,13 +643,31 @@ usermod -d /data name (d = directory)
 
 **Make a secondary group** <br>
 ```
-groupadd HR <br>
+groupadd hr <br>
 ```
+**To check added group** <br>
+```
+getent group hr
+```
+
+**Output**
+root@sky:~ # groupadd hr
+root@sky:~ # getent group hr
+hr:x:1006:
+
 **Delete the secondary group** <br>
 ```
-groupdel HR 
+groupdel hr 
 vim /etc/group <br>
 ```
+
+**Output** <br>
+root@sagar:~ # groupadd hr <br>
+root@sagar:~ # getent group hr
+hr:x:1003:
+root@sagar:~ # groupdel hr <br>
+root@sagar:~ # getent group hr <br>
+
 
 ### Permission
 
@@ -473,14 +699,24 @@ azure = name <br>
  **chmod** = for changing permission
  (777 = Full permission)
 ```
- adduser aa
+ touch aa
  chmod 777 aa
 ```
+**Output**
+  
+root@sagar:~ # touch aa <br>
+root@sagar:~ # ls -l aa <br>
+-rw-r--r-- 1 root root 0 Sep  4 20:00 aa <br>
+root@sagar:~ # chmod 777 aa <br>
+root@sagar:~ # ls -l aa <br>
+-rwxrwxrwx 1 root root 0 Sep  4 20:00 aa
+
 
 ### SSH
 
 **Ssh** = Secure Shell <br>
-it is a protocol which is use to take the console of linux remotly. it's port no. is 22. <br>
+it is a protocol which is use to take the console of linux remotly. <br>
+it's port no. is 22. <br>
 **service** = sshd (secure shell domain) <br>
 
 **Configuration file** 
