@@ -790,12 +790,12 @@ it's port no. is 22. <br>
 **Configuration file** 
 
 ```
-/etc/ssh/sshd_config <br>
+/etc/ssh/sshd_config 
 ```
 **log file**  
 
 ```
-/var/log/secure <br>
+/var/log/secure 
 ```
 
 ### Apache
