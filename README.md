@@ -456,7 +456,7 @@ aa              .gnupg               snap
 Run this command to add a new user
 
 ```
-adduser raghuvanshi <br>
+adduser raghuvanshi 
 ```
 
 **Output**
