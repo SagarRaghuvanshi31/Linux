@@ -610,7 +610,7 @@ kernal not understand the username, it understand ID (UID = user identification)
 **Make a user** <br>
 
 ```
-useradd harsh or adduser harsh <br>
+useradd harsh or adduser harsh
 ```
 **To list user** <br>
 
@@ -626,7 +626,7 @@ harsh:x:1003:1003::/home/harsh:/bin/sh
 **Give the Password** <br>
 
 ```
-passwd harsh <br>
+passwd harsh
 ```
 
 **Output** <br>
@@ -639,7 +639,7 @@ passwd: password updated successfully
 **Delete the user but keep data** <br>
 
 ```
-userdel harsh <br>
+userdel harsh 
 ```
 **Delete the user with data** <br>
 
@@ -651,7 +651,7 @@ userdel -r test
 
 **Change the login name** <br>
 
-l = login name <br>
+l = login name
 ```
 usermod -l vivek harsh
 ```
@@ -663,7 +663,7 @@ vivek:x:1003:1003::/home/harsh:/bin/sh
 **Change UID** <br>
 
 ```
-usermod -u 2000 vivek (u = uid) <br>
+usermod -u 2000 vivek (u = uid) 
 ```
 
 **Output** <br>
@@ -678,14 +678,14 @@ vivek:x:2000:1003::/home/harsh:/bin/sh
 **Give the comment** <br>
 
 ```
-usermod -c "IT ADMIN" username (c = comment) <br>
+usermod -c "IT ADMIN" username (c = comment) 
 ```
 
 **Change the home directory** <br>
 
 ```
-mkdir /data <br>
-chmod 777 /data = change permission <br>
+mkdir /data
+chmod 777 /data = change permission 
 usermod -d /data name (d = directory)
 ```
 
@@ -702,7 +702,7 @@ usermod -d /data name (d = directory)
 **Make a secondary group** <br>
 
 ```
-groupadd hr <br>
+groupadd hr
 ```
 **To check added group** <br>
 
