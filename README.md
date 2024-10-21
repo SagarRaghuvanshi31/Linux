@@ -520,7 +520,7 @@ bash
 Run this command to all system info
 
 uname = Unix name <br>
--a = archieve
+-a = all
 
 ```
 uname -a
