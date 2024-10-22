@@ -571,8 +571,6 @@ init 6 or reboot or shutdown -r
 
 **/ home** = privilege and non-privilege <br>
 
-**/ var(variables)** = contains server log, database file <br>
-
 **/ dev(device)** = contain hardware file <br>
 
 **/ bin(binaries)** = contain command file which can run by root and non-privilege <br>
