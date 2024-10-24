@@ -284,7 +284,7 @@ root@sagar:~ /cloud/ad#
 
 - **Go back from all** <br>
 
-Run this command to go back to the main page.
+Run this command to go back to the main page
 
 ```
 cd
