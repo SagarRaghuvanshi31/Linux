@@ -796,7 +796,7 @@ it's port no. is 22. <br>
 /var/log/secure 
 ```
 
-### Apache
+### Apache.
 It is use to execute/run website <br>
 It is also called webserver <br>
 
