@@ -780,10 +780,37 @@ root@sagar:~ # ls -l aa <br>
 ### SSH
 
 **Ssh** = Secure Shell <br>
-it is a protocol which is use to take the console of linux remotly. <br>
-it's port no. is 22. <br>
+
+It is a protocol which is use to take the console of linux remotly. <br>
+
+It's port no. is 22. <br>
+
+SSH encrypts the data being sent, providing secure communication over unsecured networks. <br>
+
+It’s used primarily for remote login, file transfers and executing commands on remote servers. <br>
+
 
 **service** = sshd (secure shell domain) <br>
+
+**To install the SSH client and server**
+
+```
+sudo apt update
+sudo apt install openssh-client openssh-server
+```
+
+**Start and enable the SSH server to run on boot**
+
+```
+sudo systemctl start ssh
+sudo systemctl enable ssh
+```
+
+**Check the status of the SSH server to confirm it's running**
+
+```
+sudo systemctl status ssh
+```
 
 **Configuration file** 
 
@@ -796,33 +823,215 @@ it's port no. is 22. <br>
 /var/log/secure 
 ```
 
-### Apache.
-It is use to execute/run website <br>
-It is also called webserver <br>
+### LVM
 
-**2 Protocol** <br>
+Logical Volume Manager (LVM) allows users to abstract and manage disk space more efficiently than traditional partitioning methods.
 
-**http** = hyper text transfer protocol <br>
-**port no** = 80 <br>
+LVM enables the creation of logical volumes that can span across multiple physical devices, providing more flexibility in disk management.
 
-**https** = hyper text transfer protocol secure <br>
-**port no** = 443 <br>
+**LVM Components**
 
-**service** 
+Physical Volume (PV): The physical storage devices (like hard drives, SSDs, etc.) that are used in LVM.
+
+Volume Group (VG): A collection of physical volumes combined into a single logical pool of storage.
+
+Logical Volume (LV): A virtual partition created from the volume group. LVs behave like regular partitions but are more flexible.
+
+**Create Physical Volumes**
+
+First, initialize one or more partitions or disks as PVs.
+
+/dev/sdb is a new disk, initialize it as a physical volume.
+
 ```
-httpd demon
-```
-
-**package name** 
-```
-httpd
-```
-
-**configuration file** 
-```
-/etc/httpd/conf/httpd.conf
+sudo pvcreate /dev/sdb
 ```
 
+**To view existing physical volumes**
 
+```
+sudo pvs
+```
 
+**Create a Volume Group**
 
+Combine one or more PVs into a VG.
+Create a VG named vg_data using /dev/sdb
+
+```
+sudo vgcreate vg_data /dev/sdb
+```
+
+**To view all volume groups**
+
+```
+sudo vgs
+```
+
+ **Create Logical Volumes**
+
+From the VG, create LVs which will act as storage partitions.
+
+Create a 10GB LV called lv_data from vg_data.
+
+```
+sudo lvcreate -L 10G -n lv_data vg_data
+```
+
+**To view all logical volumes**
+
+```
+sudo lvs
+```
+
+**List active LVM volumes**
+
+```
+lvscan
+```
+
+**Remove a logical volume**
+
+```
+lvremove /dev/vg_name/lv_name
+```
+
+**Remove a volume group**
+
+```
+vgremove vg_name
+```
+
+### Cronjob.
+
+A cron job is a scheduled task in Unix-like operating systems that automates repetitive tasks at specified times or intervals. <br>
+
+The cron daemon is a background service that runs the scheduled tasks at their defined times.
+
+Crontab is the file where you define cron jobs. Each user can have their own crontab, or there can be a system-wide crontab.
+
+Use crontab -e to edit the crontab file and define your cron jobs.
+
+**Here's what an asterisk (*) means in each field of the cron schedule**
+
+Minute: * in the minute field means "every minute."
+
+Example: * 5 * * * - Runs every minute during the 5th hour (5:00 AM - 5:59 AM).
+Hour: * in the hour field means "every hour."
+
+Example: 0 * * * * - Runs at the start of every hour (e.g., 1:00, 2:00, etc.).
+Day of Month: * in the day-of-month field means "every day of the month."
+
+Example: 0 0 * * * - Runs at midnight every day.
+Month: * in the month field means "every month."
+
+Example: 0 0 1 * * - Runs at midnight on the first day of every month.
+Day of Week: * in the day-of-week field means "every day of the week."
+
+Example: 0 0 * * * - Runs at midnight every day.
+
+**To Setting up Crontab**
+
+e = edit crontab file
+
+```
+crontab -e
+```
+
+**Viewing Scheduled Jobs**
+
+l = list
+
+```
+crontab -l
+```
+
+### Nginx
+
+Nginx is a high-performance HTTP and reverse proxy server, widely used for serving web content and handling high loads.
+
+It can distribute incoming traffic across multiple servers, improving performance and reliability.
+
+Nginx can act as an intermediary between clients and backend servers, hiding the backend structure and distributing requests.
+
+Commonly used for hosting websites, acting as a gateway for APIs, managing microservices, and improving the performance of high-traffic applications.
+
+**To install Nginx**
+
+```
+sudo apt update
+sudo apt install nginx
+```
+
+**After installation, start the Nginx service**
+
+```
+sudo systemctl start nginx
+```
+
+**To enable Nginx to start on boot**
+
+```
+sudo systemctl enable nginx
+```
+
+**Basic Configuration file**
+
+```
+/etc/nginx/nginx.conf
+```
+
+**To edit the configuration**
+
+```
+sudo nano /etc/nginx/nginx.conf
+```
+
+### HAProxy
+
+HAProxy (High Availability Proxy) is an open-source, high-performance load balancer and reverse proxy.
+
+Commonly used for distributing traffic across web servers to ensure high availability, reliability, and scalability.
+
+**Installing HAProxy**
+
+```
+sudo apt update
+sudo apt install haproxy
+```
+
+**After installation, you can check the HAProxy version to ensure it was installed correctly**
+
+```
+haproxy -v
+```
+
+**To start HAProxy after configuration**
+
+```
+sudo systemctl start haproxy
+```
+
+**To enable HAProxy to start on boot**
+
+```
+sudo systemctl enable haproxy
+```
+
+**To check the status**
+
+```
+sudo systemctl status haproxy
+```
+
+**Basic Configuration File**
+
+```
+/etc/haproxy/haproxy.cfg
+```
+
+**To edit configuration file**
+
+```
+sudo nano /etc/haproxy/haproxy.cfg
+```
