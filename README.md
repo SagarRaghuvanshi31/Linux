@@ -946,6 +946,12 @@ l = list
 crontab -l
 ```
 
+**To remove all cron jobs for the current user**
+
+```
+crontab -r
+```
+
 ### Nginx
 
 Nginx is a high-performance HTTP and reverse proxy server, widely used for serving web content and handling high loads.
