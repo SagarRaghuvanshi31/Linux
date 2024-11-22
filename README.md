@@ -598,9 +598,9 @@ init 6 or reboot or shutdown -r
 kernal not understand the username, it understand ID (UID = user identification)
 
 - **Privilege user** = RHEL 5,6,7,8,9 = UID = 0
-- 
+  
 - **Non-Privilege user** = RHEL 5,6 = 500 or above
-- 
+  
 - **System user** = RHEL 5,6 = 1-499, RHEL 7,8,9 = 1-999
 
 ### User Management
