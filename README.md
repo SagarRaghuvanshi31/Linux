@@ -15,7 +15,9 @@
 9. [User and Group Management](#User-and-Group-Management)
 10. [Permission](#Permission)
 11. [SSH](#SSH)
-12. [Apache](#Apache)
+12. [Cronjob](#Cronjob)
+13. [Nginx](#Nginx)
+14. [HAProxy](#HAProxy)
   
 ### Introduction to Linux 
 
